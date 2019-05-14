@@ -56,10 +56,10 @@ public class TestSpark {
         });
         String outFile = "/root/zhanglu/data/clean_data";
         File file = new File(outFile);
-        if(file.exists()){
+        if(file.exists() && file.isDirectory()){
             file.delete();
         }
-        output.saveAsTextFile("/root/zhanglu/data/clean_data");
+        output.saveAsTextFile(outFile);
         context.close();
     }
 }

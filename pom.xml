@@ -9,6 +9,7 @@
     <version>1.0.0</version>
     <modules>
         <module>java-wordcount</module>
+        <module>scala-basic</module>
     </modules>
     <packaging>pom</packaging>
 
